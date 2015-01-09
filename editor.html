@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Editor, Collaborative, Real Time">
+
+    <title>1M Editor</title>
+
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="public/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="public/assets/css/style.css" rel="stylesheet">
+    <link href="public/assets/css/style-responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" />
+    <!--link type="text/css" href="public/css/index.css" rel="stylesheet" /-->
+
+    <script>
+        var docId = function () {
+            var query_string = {};
+            var query = String(window.location);
+            var vars = query.split("#");
+            return vars[1];
+        } ();
+
+    </script>
+
+</head>
+
+<body>
+
+<section id="container" class="sidebar-closed">
+    <!-- **********************************************************************************************************************************************************
+    TOP BAR CONTENT & NOTIFICATIONS
+    *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <!--logo start-->
+        <a href="#" class="logo"><b>1 M EDITOR</b></a>
+        <!--logo end-->
+        <div class="nav notify-row" id="top_menu">
+            <!--  notification start -->
+            <ul class="nav top-menu">
+                <!-- settings start -->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                        <i class="fa fa-tasks"></i>
+                        <span class="badge bg-theme" id="doc_number">0</span>
+                    </a>
+                    <ul class="dropdown-menu extended tasks-bar" id="my_documents">
+                        <div class="notify-arrow notify-arrow-green"></div>
+                    </ul>
+                </li>
+                <!-- settings end -->
+                <!-- inbox dropdown start-->
+                <li id="header_inbox_bar" class="dropdown">
+                    <a id="btn_new_document">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </li>
+                <!-- inbox dropdown end -->
+            </ul>
+            <!--  notification end -->
+        </div>
+        <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+                <li><a class="logout" id="btn_logout">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--header end-->
+
+    <!-- **********************************************************************************************************************************************************
+    MAIN SIDEBAR MENU
+    *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <h5 class="centered">Share this document</h5>
+            </ul>
+            <!-- sidebar menu end-->
+
+            <div>
+                <!-- Twitter -->
+                <a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank"
+                   class="btn btn-twitter"><i class="fa fa-twitter"></i></a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank"
+                   class="btn btn-facebook"><i class="fa fa-facebook"></i></a>
+                <!-- Google+ -->
+                <a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank"
+                   class="btn btn-googleplus"><i class="fa fa-google-plus"></i></a>
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=" title="Share on LinkedIn"
+                   target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+    <!-- **********************************************************************************************************************************************************
+    MAIN CONTENT
+    *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper">
+
+            <div class="row">
+                <div class="col-lg-9">
+
+                    <!-- EDITOR-->
+                    <div id="editor" style="margin-top: 16px;"></div>
+                    <!-- /row -->
+                </div>
+                <!-- /col-lg-9 END SECTION MIDDLE -->
+
+                <!-- **********************************************************************************************************************************************************
+                RIGHT SIDEBAR CONTENT
+                *********************************************************************************************************************************************************** -->
+
+                <div class="col-lg-3 ds" id="collaborators">
+                    <!-- USERS ONLINE SECTION -->
+                    <h3>Collaborators</h3>
+                    <div class="desc">
+                        <div class="thumb">
+                        </div>
+                        <div class="details">
+                            <p><a href="#">DIVYA MANIAN</a><br/>
+                                <muted>Available</muted>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /col-lg-3 -->
+            </div>
+            <! --/row -->
+        </section>
+    </section>
+
+    <!--main content end-->
+    <!--footer start>
+    <footer class="site-footer">
+        <div class="text-center">
+            2014 - Master 2 ALMA
+            <a href="#" class="go-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+    </footer>
+    <!--footer end-->
+</section>
+
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="public/assets/js/jquery.js"></script>
+
+<!--script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script-->
+<script type="application/javascript" src="public/js/bootstrap.min.js"></script>
+
+<script class="include" type="text/javascript" src="public/assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="public/assets/js/jquery.scrollTo.min.js"></script>
+<script src="public/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+
+
+<!--common script for all pages-->
+<script src="public/assets/js/common-scripts.js"></script>
+
+<script src="public/js/eventemitter.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/seedrandom.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/lseq.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/utils.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/utility.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/filesystem.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/pbcast.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/pbcastws.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/editor.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/js/main.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="application/javascript">
+    var username = getCookie("username");
+    console.log("username="+username);
+    $(document).ready(function () {
+        MFileSystem.initFileSystem();
+
+        if(username==null || username.length<=0){
+            console.log("not logged in");
+            $('#registerModal').modal({
+                backdrop: 'static',
+                keyboard: false,
+                show: true
+            });
+        }
+        else{
+            console.log("logged in");
+            if(docId !=null && docId.length>0){
+                setTimeout(function () { initEditor(username, docId); }, 500);
+            }
+        }
+        //
+        $('#registerSubmit').click(register);
+
+        $('#btn_new_document').click(function() {
+            $('#newDocModal').modal({
+                backdrop: 'static',
+                keyboard: false,
+                show: true
+            });
+        });
+
+        $('#btn_logout').click(function() {
+            removeCookie("username");
+            //document.cookie="username=";
+            document.location.href = "";
+        });
+
+        $('#newDocSubmit').click(function() {
+            var documentTitle = ($('#documentTitle').val().length > 0) ? $('#documentTitle').val() : 'untitled';
+            var documentType = $('select[name=docType]').val();;
+            document.location.href = "#"+documentTitle;
+            location.reload();
+        });
+    });
+//"username" document.cookie="username="+username;
+    function register(){
+        username = ($('#username').val().length > 0) ? $('#username').val() : 'NoName';
+        setCookie("username", username, false);
+
+        location.reload();
+    }
+</script>
+
+<div class="modal fade" id="registerModal" style="height: 210px; width: 400px;">
+    <div class="modal-header">
+        <h1>1M-Editor</h1>
+    </div>
+    <div class="modal-body">
+        <div class="form-inline">
+            <div class="modal-connect">
+                <div class="input-prepend input-append">
+                    <div>
+                        <label for="username" class="col-xs-4 control-label">Username </label>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" id="username" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" id="registerSubmit" data-loading-text="Registering ...">Register</button>
+    </div>
+</div>
+
+<!-- Form new document -->
+<div class="modal fade" id="newDocModal" style="height: 260px; width: 350px;">
+    <div class="modal-header">
+        <h1>New Document</h1>
+    </div>
+    <div class="modal-body">
+        <div class="form-inline">
+            <!--div class="modal-connect"-->
+                <div class="input-prepend input-append fullWidth">
+                    <label for="documentTitle" class="col-xs-2 control-label">Title </label>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" id="documentTitle" value="">
+                    </div>
+                </div>
+
+                <div class="input-prepend input-append fullWidth">
+                    <label for="docType" class="col-xs-3 control-label">Type </label>
+                    <div class="col-xs-4">
+                        <select name="docType" id="docType" class="form-control">
+                            <option value="txt">Text</option>
+                            <option value="java">Java</option>
+                            <option value="c">C</option>
+                            <option value="xml">XML</option>
+                        </select>
+                    </div>
+                </div>
+            <!--/div-->
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary" id="newDocSubmit" data-loading-text="Creating ...">Create</button>
+    </div>
+</div>
+</body>
+</html>

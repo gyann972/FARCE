@@ -1,0 +1,21 @@
+{
+  "name": "FARCE",
+  "version": "0.0.0",
+  "description": "Online collaborative text editor",
+  "main": "server.js",
+  "dependencies": {
+    "websocket": "~1.0.8",
+    "ws": "^0.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "editor",
+    "collaborative"
+  ],
+  "author": "",
+  "license": "GPL"
+}
